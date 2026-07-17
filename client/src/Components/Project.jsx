@@ -13,13 +13,13 @@ const DisplayProject = ({ img, title, description, skills, url }) => {
   
   return (
     <motion.div 
-    // initial={{opacity : 0, y : 80}}
-    // whileInView={{opacity : 1, y : 0}}
-    // viewport={{once : true, amount : 0.2}}
-    // transition={{
-    //   duration: 1,
-    //   ease: "easeIn"
-    // }}
+    initial={{opacity : 0, y : 80}}
+    whileInView={{opacity : 1, y : 0}}
+    viewport={{once : true, amount : 0.2}}
+    transition={{
+      duration: 1,
+      ease: "easeIn"
+    }}
     
     className='w-[400px] border p-3 rounded-lg
     transition-all duration-500 ease-in-out cursor-pointer

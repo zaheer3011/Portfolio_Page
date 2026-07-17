@@ -39,7 +39,16 @@ const DisplayPlatform = ({ image, name, logo, siteURL }) => {
   const IconComponent = logo
 
   return (
-    <div className='flex flex-wrap w-[400px] border rounded-xl p-2 my-2 
+    <motion.div 
+        initial={{opacity : 0, y : 80}}
+        whileInView={{opacity : 1, y : 0}}
+        viewport={{once : true, amount : 0.2}}
+        transition={{
+          duration : 0.8,
+          ease : "easeInOut"
+        }}
+
+    className='flex flex-wrap w-[400px] border rounded-xl p-2 my-2 
     transition-all duration-500 ease-in-out
     hover:-translate-y-3
     hover:scale-105
@@ -51,7 +60,7 @@ const DisplayPlatform = ({ image, name, logo, siteURL }) => {
             <a href={siteURL} target='_blank'><IconComponent size="2rem" /></a>
         </span>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
