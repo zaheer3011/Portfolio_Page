@@ -11,6 +11,3 @@ const connectDB = async () => {
 };
 
 connectDB();
-
-// Project Name = Portfolio Feedback
-// email = za6968486@gmail.com
