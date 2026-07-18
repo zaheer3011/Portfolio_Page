@@ -14,7 +14,7 @@ import "react-toastify/dist/ReactToastify.css"
 
 const App = () => {
   return (
-    <div className='App'>
+    <div className='bg-[#f8ffe5]'>
       <ToastContainer position='top-right' autoClose={3000} />
       <Navbar/>
       <Home/>
